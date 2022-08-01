@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Registo de Utilizador</title>
+        <link href="recursos/style/style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <h1>Registo de Utilizador</h1>
+        <!-- o metodo post envia os dados de uma página para a outra de forma escondida
+            o metodo get envia os dados para a página seguinte pela barra de endereço-->
+            <form action="registo.php" method="post" enctype="multipart/form-data">
+            <p>Nick:<input type="text" name="nick" size="20" maxlength="20" required></p>
+            <p>Nome:<input type="text" name="nome" size="100" maxlength="100" required></p>
+            <p>E-mail:<input type="text" name="email" size="50" maxlength="50" required></p>
+            <p>Data de Nascimento:<input type="date" name="data_nasc" required></p>
+            <p>Senha:<input type="password" name="pass" size="20" maxlength="20" required></p>
+            <p>Fotografia:<input type="file" name="ficheiro"><br><br>
+                <!-- a tag textarea permite definir uma entrada de dados,
+                utilizando não apenas uma linha, mas várias -->
+               
+            <!--O botao submit envia os dados para a pagina inserir.php o reset limpa
+                os dados de todos os campos -->
+            <input type="submit" value="Inserir">
+            <input type="reset" value="Limpar">
+            <br><br>
+            <a href="index.html" target="_self">Voltar ao menu</a>
+        </form>
+
+    </body>
+</html>
